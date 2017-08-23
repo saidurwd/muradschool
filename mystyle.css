@@ -1,0 +1,57 @@
+/* my custom style */
+
+#maintable{border-collapse: collapse;
+border-color: blue;
+margin-bottom: 20px;
+text-align: center;}
+#maintable th{font-weight:bold;font-size: 13px;color:blue}
+#maintable td{font-weight:normal;font-size: 13px;}
+.maincontent{margin: 0 auto;
+width: 960px;}
+.maincontent h2{color: black;
+padding: 10px;
+text-align: left;}
+.maincontent h3{color:#000;}
+.maincontent h3 span{color: #576986;
+font-style: italic;
+font-weight: bold;}
+.maincontent p span{color: #576986;
+font-style: italic;
+font-weight: bold;}
+div.mypagination{font-size: 12px;
+margin-bottom: 20px;}
+div.mypagination a{background: none repeat scroll 0 0 #3399FF;
+color: #fff;
+font-weight: bold;
+padding: 3px 5px;}
+div.mypagination a:hover{color:#000;}
+div a.current{}
+span{color:red;}
+#admission{}
+#admission td{font-size: 13px;
+padding-bottom: 5px;
+vertical-align: middle;}
+.mycontent{border: 1px solid #ffffff;
+margin-bottom: 10px;
+padding: 10px;
+text-align: left;
+width: 960px;}
+.mycontent h3{float: left;
+font-size: 12px;
+font-style: italic;}
+.mycontent h2{border-bottom: 1px dotted;
+margin-top: 20px;}
+.mycontent p{}
+.mycontent span{color: firebrick;
+font-style: italic;}
+.search{}
+.search input{}
+.input{float: right;}
+
+.resulttbl{}
+.resulttbl tr{}
+.resulttbl td{padding: 5px;border-color: #fff;}
+.black12bold{font-weight: bold;}
+.printbtn{}
+
+

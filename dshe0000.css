@@ -1,0 +1,169 @@
+BODY {
+	SCROLLBAR-FACE-COLOR: #e3e3e3; SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; SCROLLBAR-SHADOW-COLOR: #666666; SCROLLBAR-3DLIGHT-COLOR: #666666; SCROLLBAR-ARROW-COLOR: #666666; SCROLLBAR-TRACK-COLOR: #f2f2f2; SCROLLBAR-DARKSHADOW-COLOR: #cccccc
+}
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+body,td,th{font-family:Verdana, Arial, Helvetica, sans-serif;
+			font-size:12px;
+			}
+.spacing1 {
+	LETTER-SPACING: 1px
+}
+.nrm01 {
+	FONT: 8pt/10pt verdana
+}
+.nrm02 {
+	FONT: 7pt/10pt verdana
+}
+.link01:link {
+	COLOR: #3366cc; TEXT-DECORATION: none
+}
+.link01:visited {
+	COLOR: #3366cc; TEXT-DECORATION: none
+}
+.link01:hover {
+	COLOR: #CC0000; TEXT-DECORATION: underline
+}
+.link02:link {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.link02:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.link02:hover {
+	COLOR: #ffffcc; TEXT-DECORATION: underline
+}
+.link03:link {
+	COLOR: #2850a2; TEXT-DECORATION: none
+}
+.link03:visited {
+	COLOR: #2850a2; TEXT-DECORATION: none
+}
+.link03:hover {
+	COLOR: #cc6600; TEXT-DECORATION: underline
+}
+.link04:link {
+	COLOR: #003366; TEXT-DECORATION: none
+}
+.link04:visited {
+	COLOR: #003366; TEXT-DECORATION: none
+}
+.link04:hover {
+	COLOR: #cc6600; TEXT-DECORATION: underline
+}
+.link05:link {
+	COLOR: #346a74; TEXT-DECORATION: none
+}
+.link05:visited {
+	COLOR: #346a74; TEXT-DECORATION: none
+}
+.link05:hover {
+	COLOR: #cc6600; TEXT-DECORATION: underline
+}
+.link06:link {
+	COLOR: #ff6600; TEXT-DECORATION: underline
+}
+.link06:visited {
+	COLOR: #ff6600; TEXT-DECORATION: underline
+}
+.link06:hover {
+	COLOR: #3366cc; TEXT-DECORATION: underline
+}
+.link07:link {
+	COLOR: #669900; TEXT-DECORATION: none
+}
+.link07:visited {
+	COLOR: #669900; TEXT-DECORATION: none
+}
+.link07:hover {
+	COLOR: #CC0000; TEXT-DECORATION: underline
+}
+
+.link08:link {
+	COLOR: #485810; TEXT-DECORATION: none
+}
+.link08:visited {
+	COLOR: #485810; TEXT-DECORATION: none
+}
+.link08:hover {
+	COLOR: #CC0000; TEXT-DECORATION: underline
+}
+.link12:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.link12:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.link12:hover {
+	COLOR:  #CC0000; TEXT-DECORATION: underline
+}
+.link13:link {
+	COLOR: #FFFF00; TEXT-DECORATION: underline
+}
+.link13:visited {
+	COLOR: #FFFFFF; TEXT-DECORATION: none
+}
+.link13:hover {
+	COLOR: #FFFFFF; TEXT-DECORATION: underline
+}
+
+
+a:link {
+	color: #386898;
+	text-decoration: none;
+}
+a:visited {
+	color: #386898;
+	text-decoration: none;
+}
+a:hover {
+	color: #CC0000;
+	text-decoration: underline;
+}
+
+
+.BlackBorder {
+	BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid; BORDER-LEFT: #666666 1px solid; BORDER-BOTTOM: #666666 1px solid
+}
+.ListHeader {
+	BORDER-RIGHT: gray 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: white 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: white 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: gray 1px solid; BACKGROUND-COLOR: buttonface
+}
+.style14 {color: #999999}
+.style15 {
+	color: #FF9900;
+	font-weight: bold;
+}
+.style35 {font-size: 10px}
+.style37 {color: #0099FF; font-weight: bold; font-size: 10px; }
+.style42 {color: #CC6600}
+.style44 {color: #CC0000}
+.style45 {
+	color: #CC9900;
+	font-weight: bold;
+}.style46 {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.style47 {font-weight: bold}
+.style48 {color: #C0A870}
+.style49 {
+	color: #485810;
+	font-weight: bold;
+}
+.style50 {color: #C0A470}
+.style51 {color: #C0A870; font-weight: bold; }
+.style52 {color: #F0CC18; font-weight: bold; }
+.style55 {font-size: 9px}
+.style63 {font-family: Boishakhi; font-size: 12px; }
+.style64 {color: #000000}
+.style65 {color: #FFFFFF}
+.style66 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	color: #666666;
+}

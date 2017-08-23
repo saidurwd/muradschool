@@ -1,0 +1,475 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #171111;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFCC;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: gold;
+}
+
+h1 {
+	font-size: 44px;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+h3 {
+}
+
+p, ul, ol {
+	margin-top: 0;
+	line-height: 240%;
+	text-align: justify;
+}
+
+ul, ol {
+}
+
+blockquote {
+}
+
+a {
+	color: #FF3300;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a img {
+	border: none;
+}
+
+img.left {
+	float: left;
+	margin: 7px 30px 0 0;
+}
+
+img.right {
+	float: right;
+	margin: 7px 0 0 30px;
+}
+
+hr {
+	display: none;
+}
+
+.list1 {
+}
+
+.list1 li {
+	float: left;
+	line-height: normal;
+}
+
+.list1 li img {
+	margin: 0 30px 30px 0;
+}
+
+.list1 li.alt img {
+	margin-right: 0;
+}
+
+#wrapper {
+}
+
+/* Header */
+
+#header-wrapper {
+}
+
+#header {
+background: none repeat scroll 0 0 #b6b6b6;
+border: 1px dashed #000;
+height: 50px;
+margin: 0 auto;
+width: 1170px;
+}
+
+/* Menu */
+
+#menu {
+float: right;
+height: 50px;
+width: 250px;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	display: block;
+	float: left;
+}
+
+#menu a {
+background: url("../images/img04.jpg") no-repeat scroll left top rgba(0, 0, 0, 0);
+color: #000;
+display: block;
+float: left;
+font-family: Arial,Helvetica,sans-serif;
+font-size: 20px;
+height: 34px;
+margin-right: 3px;
+padding: 16px 30px 0;
+text-decoration: none;
+text-transform: capitalize;
+}
+
+#menu a:hover {
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+
+#menu .current_page_item a {
+	color: #FFFFFF;
+}
+
+#menu .first {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+color: #000;
+font-size: 20px;
+}
+
+/* Search */
+
+#search {
+	float: left;
+	width: 280px;
+	height: 45px;
+}
+
+#search form {
+	margin: 0;
+	padding: 16px 0px 0 30px;
+}
+
+#search fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#search input {
+	float: left;
+	font: 12px Georgia, "Times New Roman", Times, serif;
+	border: none;
+}
+
+#search-text {
+	width: 135px;
+	height: 18px;
+	padding: 3px 0 0 5px;
+	border: 1px solid #333333;
+	background: #ECF9E4;
+	color: #000000;
+}
+
+#search-submit {
+	height: 21px;
+	margin-left: 10px;
+	padding: 0px 5px;
+	background: #000000;
+	color: #FFFFFF;
+}
+
+/* Page */
+
+#page {
+	width: 1170px;
+	margin: 0 auto;
+	padding: 0px;
+	background: #525252;
+}
+
+#page-bgtop {
+	padding-top: 30px;
+}
+
+/** LOGO */
+
+#logo {
+	border: 1px solid #ddd;
+margin: 5px auto;
+width: 1170px;
+}
+
+#logo h1, #logo p {
+	margin: 0px;
+	line-height: normal;
+	text-transform:uppercase;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+
+#logo p {
+	text-transform: lowercase;
+	font-size: 10px;
+}
+
+#logo h1 {
+font-family: Georgia,"Times New Roman",Times,serif;
+padding: 20px 0;
+}
+
+#logo a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/* Content */
+
+#content {
+float: right;
+padding: 5px;
+width: 948px;
+}
+
+/* Post */
+
+.post {
+	margin-bottom: 25px;
+	border-bottom: 1px dotted #474646;
+}
+
+.post .title {
+	height: 30px;
+	color: #D6D6D6;
+}
+
+.post .title a {
+	text-decoration: none;
+	color: #D6D6D6;
+}
+
+.post .date {
+}
+
+.post .meta {
+	margin-top: -10px;
+	padding: 2px 30px 2px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 10px;
+	font-style: italic;
+	color: #949494;
+}
+
+.post .meta a {
+	color: #949494;
+}
+
+.post .meta span {
+	display: block;
+	margin-top: -10px;
+}
+
+.post .meta a {
+}
+
+.post .entry {
+	padding: 10px 0;
+}
+
+.post .links {
+	margin: 0 250px 0 0;
+	padding: 0 0 0 0px;
+}
+
+.post .links .comments {
+}
+
+.post .links .permalink {
+	padding-left: 17px;
+}
+
+/* Sidebar */
+
+#sidebar {
+border: 1px solid #ccc;
+color: #cc99ff;
+float: left;
+font-family: Arial,Helvetica,sans-serif;
+font-size: 11px;
+margin-top: -28px;
+padding: 5px;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+}
+
+#sidebar li {
+	margin-bottom: 30px;
+	padding: 0 0 10px 0px;
+}
+
+#sidebar li ul {
+}
+
+#sidebar li li {
+	margin: 0px;
+	border-bottom: 1px solid #fff;
+}
+
+#sidebar p {
+	margin: 0;
+	padding: 0px 0px;
+}
+
+#sidebar h2 {
+font-size: 30px;
+font-weight: normal;
+padding: 10px;
+text-transform: capitalize;
+}
+
+#sidebar p {
+	line-height: 200%;
+}
+
+#sidebar a {
+	text-align: left;
+	text-decoration: none;
+	font-weight: normal;
+	color: #585D60;
+}
+
+/* Calendar */
+
+#calendar {
+}
+
+#calendar caption {
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+
+#calendar table {
+	width: 100%;
+	border-collapse: collapse;
+	border-bottom: 1px solid #24130F;
+	border-left: 1px solid #24130F;
+	border-right: 1px solid #24130F;
+}
+
+#calendar thead th {
+	padding: 5px 0;
+	text-align: center;
+	border-top: 1px solid #24130F;
+	border-left: 1px solid #24130F;
+	background: #24130F;
+}
+
+#calendar tbody td {
+	padding: 5px 0;
+	text-align: center;
+	border-top: 1px solid #24130F;
+	border-left: 1px solid #24130F;
+	border-bottom: 1px solid #24130F;
+}
+
+#calendar tfoot td {
+	padding: 5px;
+	border-left: 1px solid #24130F;
+	border-bottom: 1px solid #24130F;
+}
+
+#calendar tfoot #next {
+	border-top: 1px solid #24130F;
+	text-align: right;
+}
+
+#calendar tfoot #prev {
+	border-top: 1px solid #24130F;
+}
+
+#calendar .pad {
+	border-bottom: 1px solid #24130F;
+}
+
+#calendar #today {
+	background: #24130F;
+}
+
+/* Footer */
+
+#footer {
+border: 1px dotted #ccc;
+margin: 0 auto 20px;
+padding: 20px 0;
+width: 1170px;
+}
+
+#footer-bgcontent {
+}
+
+#footer p {
+	margin: 0;
+	text-align: center;
+	line-height: normal;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #6C6A69;
+}
+
+#footer a {
+	color: #6C6A69;
+}
+
+/*my style*/
+
+
+#mytable{
+text-align: center;
+color: #fff;
+font-size: 15px;
+font-weight: normal;
+width: 100%;
+}
+
+#mytable th{
+	color:blue;
+}
+#mytable td{
+	color:#ff0;
+}
+#mytable a{
+	color: mediumspringgreen;
+    text-decoration: none;
+}
+#mytable a:hover{
+	color: red;
+}
+#mytable_curact{text-align: center;
+color: #fff;
+font-size: 15px;
+font-weight: normal;
+width: 100%;}
+#mytable_curact th{color:#ff0;}
+#mytable_curact td{}
+#mytable_curact a{color: mediumspringgreen;
+    text-decoration: none;}
+#mytable_curact a:hover{
+	color: red;
+}
+#cr_title{width: 300px;}
+
+
+
