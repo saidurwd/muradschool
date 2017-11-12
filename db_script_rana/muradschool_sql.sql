@@ -23,4 +23,7 @@ ALTER TABLE `std_class10_tbl` ADD COLUMN `student_device_id` INT NOT NULL COMMEN
 SELECT rc.`std_name`,rc.`std_cls`,rc.`std_roll`,rc.`std_sft`,rc.`std_sec`,rc.`std_grp`,rc.`std_gen`,ap.`log_time` FROM `std_class1_tbl` rc
 LEFT OUTER JOIN `attendance_api` ap ON rc.`student_device_id` = ap.`user_did` 
 WHERE DATE(ap.log_time) BETWEEN "2017-09-30" AND "2017-09-30" 
-ORDER BY rc.`s_id` ASC, ap.`log_time` ASC 
+ORDER BY rc.`s_id` ASC, ap.`log_time` ASC;
+
+/* November 12, 2017 */
+ALTER TABLE `preteach_tbl` ADD COLUMN `device_id` VARCHAR(20) NOT NULL AFTER `tech_photo`; 
