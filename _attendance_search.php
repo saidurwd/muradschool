@@ -75,6 +75,11 @@ if (empty($_POST['class'])) {
                             <td>
                                 Class: 
                                 <select name="class" id="class" style="width: 100px;">
+                                    <option value="99" <?php
+                                    if ($class == 99) {
+                                        echo 'selected="selected"';
+                                    }
+                                    ?> >Teacher's</option>
                                     <option value="1" <?php
                                     if ($class == 1) {
                                         echo 'selected="selected"';
@@ -134,53 +139,105 @@ if (empty($_POST['class'])) {
                     </table>
                 </form>
                 <?php
-                $query = mysql_query("SELECT rc.`std_name`,rc.`std_cls`,rc.`std_roll`,rc.`std_sft`,rc.`std_sec`,rc.`std_grp`,rc.`std_gen`,ap.`log_time` FROM `std_class" . $class . "_tbl` rc
-                                                            LEFT OUTER JOIN `attendance_api` ap ON rc.`student_device_id` = ap.`user_did` 
+                if ($class == 99) {                                
+                    $query = mysql_query("SELECT rc.`t_id`,rc.`tech_id`,rc.`tech_name`,rc.`tech_designation`,rc.`tech_indxno`,rc.`tech_contact`,rc.`tech_sub`,ap.`log_time` FROM `preteach_tbl` rc
+                                                            LEFT OUTER JOIN `attendance_api` ap ON rc.`device_id` = ap.`user_did` 
                                                             WHERE DATE(ap.log_time) BETWEEN '$start_date' AND '$end_date' 
-                                                            ORDER BY rc.`s_id` ASC, ap.`log_time` ASC ") or die('could not search');
-                $output = 'No result found. <a href="_attendance_search.php">Please Again search</a>';
-                ?>               
-                <div id="divToPrint" class="resulttbl">
-                    <table id="attendance" class="display" width="100%" cellspacing="0">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Class</th>
-                                <th>Roll</th>
-                                <th>Shift</th>
-                                <th>Section</th>
-                                <th>Group</th>
-                                <th>Gender</th>
-                                <th>Log Time</th>
-                            </tr>
-                        </thead>
-                        <tbody>                                                                                            
-                            <?php
-                            while ($row = mysql_fetch_array($query)) {
-                                ?>
-                                <tr>
-                                    <td><?php echo $row['std_name']; ?></td>
-                                    <td><?php echo $row['std_cls']; ?></td>
-                                    <td><?php echo $row['std_roll']; ?></td>
-                                    <td><?php echo $row['std_sft']; ?></td>
-                                    <td><?php echo $row['std_sec']; ?></td>
-                                    <td><?php echo $row['std_grp']; ?></td>
-                                    <td><?php echo $row['std_gen']; ?></td>
-                                    <td><?php echo get_date_time($row['log_time']); ?></td>
+                                                            ORDER BY rc.`t_id` ASC, ap.`log_time` ASC ") or die('could not search');
+                    $output = 'No result found. <a href="_attendance_search.php">Please Again search</a>';
+                    ?>               
+                    <div id="divToPrint" class="resulttbl">
+                        <table id="attendance" class="display" width="100%" cellspacing="0">
+                            <thead>
+                                <tr>  	 	 	 	 	 	
+                                    <th>S.No</th>
+                                    <th>Teacher ID</th>
+                                    <th>Name</th>
+                                    <th>Designation</th>
+                                    <th>Index No</th>
+                                    <th>Contact No</th>
+                                    <th>Subject</th>
+                                    <th>Log Time</th>
                                 </tr>
+                            </thead>
+                            <tbody>                                                                                            
                                 <?php
-                            }
-                            echo '</tbody>';
-                            echo '</table>';
-                            echo '</div>';
-                            ?>
-                            <?php
-                            exit();
-                            ?>
-                            </td>
-                        </tbody>
-                    </table>
-                </div>
+                                while ($row = mysql_fetch_array($query)) {
+                                    ?>
+                                    <tr>
+                                        <td><?php echo $row['t_id']; ?></td>
+                                        <td><?php echo $row['tech_id']; ?></td>
+                                        <td><?php echo $row['tech_name']; ?></td>
+                                        <td><?php echo $row['tech_designation']; ?></td>
+                                        <td><?php echo $row['tech_indxno']; ?></td>
+                                        <td><?php echo $row['tech_contact']; ?></td>
+                                        <td><?php echo $row['tech_sub']; ?></td>
+                                        <td><?php echo get_date_time($row['log_time']); ?></td>
+                                    </tr>
+                                    <?php
+                                }
+                                echo '</tbody>';
+                                echo '</table>';
+                                echo '</div>';
+                                ?>
+                                <?php
+                                exit();
+                                ?>
+                                </td>
+                            </tbody>
+                        </table>
+                    </div>
+                <?php
+                } else {
+                    $query = mysql_query("SELECT rc.`std_name`,rc.`std_cls`,rc.`std_roll`,rc.`std_sft`,rc.`std_sec`,rc.`std_grp`,rc.`std_gen`,ap.`log_time` FROM `std_class" . $class . "_tbl` rc
+                    LEFT OUTER JOIN `attendance_api` ap ON rc.`student_device_id` = ap.`user_did` 
+                    WHERE DATE(ap.log_time) BETWEEN '$start_date' AND '$end_date' 
+                    ORDER BY rc.`s_id` ASC, ap.`log_time` ASC ") or die('could not search');
+                    $output = 'No result found. <a href="_attendance_search.php">Please Again search</a>';
+                    ?>               
+                    <div id="divToPrint" class="resulttbl">
+                        <table id="attendance" class="display" width="100%" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Class</th>
+                                    <th>Roll</th>
+                                    <th>Shift</th>
+                                    <th>Section</th>
+                                    <th>Group</th>
+                                    <th>Gender</th>
+                                    <th>Log Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>                                                                                            
+                                <?php
+                                while ($row = mysql_fetch_array($query)) {
+                                    ?>
+                                    <tr>
+                                        <td><?php echo $row['std_name']; ?></td>
+                                        <td><?php echo $row['std_cls']; ?></td>
+                                        <td><?php echo $row['std_roll']; ?></td>
+                                        <td><?php echo $row['std_sft']; ?></td>
+                                        <td><?php echo $row['std_sec']; ?></td>
+                                        <td><?php echo $row['std_grp']; ?></td>
+                                        <td><?php echo $row['std_gen']; ?></td>
+                                        <td><?php echo get_date_time($row['log_time']); ?></td>
+                                    </tr>
+                                    <?php
+                                }
+                                echo '</tbody>';
+                                echo '</table>';
+                                echo '</div>';
+                                ?>
+                                <?php
+                                exit();
+                                ?>
+                                </td>
+                            </tbody>
+                        </table>
+                    </div>
+<?php } ?>
+
             </div>
     </body>
 </html>
