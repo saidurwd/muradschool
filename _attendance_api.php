@@ -4,7 +4,8 @@ include('dbconnect.php');
 
 //formating date
 //$date = new DateTime();
-$date = new DateTime('now', new DateTimezone('Asia/Dhaka'));
+//$date = new DateTime('now', new DateTimezone('Asia/Dhaka'));
+$date = new DateTime('now', new DateTimezone('UTC'));
 $date->setTimestamp(@$_REQUEST['date_time']);
 
 $user_did = @$_REQUEST['card_no'];
