@@ -11,7 +11,7 @@ while ($row = mysql_fetch_array ($result)){
 ?>      
 <table bgcolor="#CCCCCC" style="background: none repeat scroll 0% 0% rgb(211, 211, 211);width: 225px;">
 <tr>	  	    	                   
-<td align="center" style="border-bottom: 1px solid rgb(255, 255, 255);"><p><a href="admin/index.php" target="_blank"><strong><font size="2" style="color:#000;">ওয়েবসাইটের কন্ট্রোল  প্যানেল: প্রবেশ করুন</font></strong></p>  
+<td align="center" style="border-bottom: 1px solid rgb(255, 255, 255);"><p><a href="backend/index.php" target="_blank"><strong><font size="2" style="color:#000;">ওয়েবসাইটের কন্ট্রোল  প্যানেল: প্রবেশ করুন</font></strong></p>  
 <img style="width: 100%;" src="images/login.gif" border="0" /></a></td></tr>
 
 <tr>
